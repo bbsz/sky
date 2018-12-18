@@ -11,7 +11,7 @@ import java.util.Map;
 public class MovieServiceImpl implements MovieService {
 
     static final String PARENTAL_CONTROL_LEVEL_PG = "PG";
-    static final String PARENTAL_CONTROL_LEVEL_U = "U";
+    static final String PARENTAL_CONTROL_LEVEL_U  = "U";
     static final String PARENTAL_CONTROL_LEVEL_13 = "13";
     static final String PARENTAL_CONTROL_LEVEL_15 = "15";
     static final String PARENTAL_CONTROL_LEVEL_18 = "18";
@@ -33,7 +33,6 @@ public class MovieServiceImpl implements MovieService {
             return movie.getParentalControlLevel();
         }
         throw new TitleNotFoundException("Movie cannot be found!");
-
     }
 
     private void initMovieDatabase() {
