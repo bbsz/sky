@@ -1,12 +1,5 @@
 package com.sky.movies.metadata.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
-@Data
-@AllArgsConstructor
-@EqualsAndHashCode(of = "id")
 public class Movie {
 
     private String id;
@@ -14,4 +7,22 @@ public class Movie {
     private String name;
 
     private String parentalControlLevel;
+
+    public Movie(String id, String name, String parentalControlLevel) {
+        this.id = id;
+        this.name = name;
+        this.parentalControlLevel = parentalControlLevel;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getParentalControlLevel() {
+        return parentalControlLevel;
+    }
 }
