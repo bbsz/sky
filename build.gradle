@@ -12,7 +12,6 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.4'
 
     testCompile group: 'org.assertj', name: 'assertj-core', version: '3.11.1'
     testCompile group: 'org.mockito', name: 'mockito-all', version: '1.9.5'
