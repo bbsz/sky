@@ -9,3 +9,9 @@ code - MovieServiceImpl. This service contains a fixed set of movies that are in
 realistic scenarios consider loading data from DB.
 
 
+# How to run 
+
+The project is build using Gradle and uses Java 8. To simplest way to run the tests is to import a new gradle project 
+and configure it so that gradle wrapper to build it.
+
+
